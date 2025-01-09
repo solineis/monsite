@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Theme</title>
+    <style>
+        @font-face {
+            font-family: 'MD-Primer-Test';
+            src: url('MD-Primer-Test');
+            src: local('MDPrimerTest-Regular'), local('MDPrimerTest'),
+                url('MD-Primer-Test/MDPrimerTest/MDPrimerTest-Regular.otf') format('embedded-opentype'),
+                url('MD-Primer-Test/MDPrimerTest/MDPrimerTest-Regular.otf') format('otf'),
+                url('MD-Primer-Test/MDPrimerTest/MDPrimerTest-Regular.otf') format('otf'),
+                url('MD-Primer-Test/MDPrimerTest/MDPrimerTest-Regular.otf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'MD-Primer-Test';
+            font-weight: normal;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+            color: #555;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .image {
+            margin-bottom: 10px;
+            cursor: pointer; /* Pour montrer que c'est cliquable */
+        }
+
+        .image img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .text {
+            font-size: 16px;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+        .divider {
+            border-top: 1px dashed #ccc;
+            margin: 10px auto;
+            width: 150px;
+        }
+
+        .links {
+            margin-top: 10px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #3b373a;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .links a:hover {
+            color: #d23c3c;
+        }
+
+        /* Fading in the page */
+body {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.body.classList.add('loaded');
+        }); 
+      </script>
+      
+    <link rel="preload" href="MD-Primer-Test.woff2" as="font" type="font/woff2" crossorigin>
+    <div class="container">
+        <div class="image">
+            <img id="randomImage" src="lettre.png" alt="Green Plant">
+        </div>
+        <div class="text">hi, i'm soline<br>digital content creator based in paris</div>
+        <div class="divider"></div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/soline-garois/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+            <a href="https://drive.google.com/file/d/1uxvWvu0TfSzExnVM_KvTiYWxumlIaGrw/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
+            <a href="https://www.canva.com/design/DAGbixvHdag/whv8H5zFrf_LL6w6YVY7tQ/view?utm_content=DAGbixvHdag&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h09ec675f50#1" target="_blank" rel="noopener noreferrer">MY WORK</a>
+            <a href="MAILTO:solinegarois@gmail.com" target="_blank" rel="noopener noreferrer">LET'S TALK !</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
